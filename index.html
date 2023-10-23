@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Play Rock Paper Scissors</title>
+
+  <link rel="stylesheet" href="style/main.css">
+</head>
+
+<body class="toggleOff">
+
+  <header>
+
+    <div class="header-container">
+
+      <div class="dark-mode-div">
+        <button class="dark-mode-button js-dark-mode-button" onclick="darkModeOn()">
+          🌙
+        </button>
+      </div>
+
+    </div>
+
+  </header>
+
+  <main>
+    <h1>Rock Paper Scissors Game</h1>
+    <section>
+      <div class="buttons-div">
+        <button class="rps-button" onclick="playerChoice('✊')">
+          ✊
+        </button>
+        <button class="rps-button" onclick="playerChoice('🖐️')">
+          🖐️
+        </button>
+        <button class="rps-button" onclick="playerChoice('✌️')">
+          ✌️
+        </button>
+      </div>
+      <div class="final-result-div">
+        <p class="js-result result"></p>
+        <p class="js-compare-plays compare-results"></p>
+        <p class="js-score"></p>
+      </div>
+      <div class="buttons-div">
+        <button class="clear-score-button" onclick="clearScore();">Clear Score</button>
+      </div>
+    </section>
+
+
+  </main>
+
+  <script src="script/script.js"></script>
+</body>
+
+</html>

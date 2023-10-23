@@ -1,0 +1,119 @@
+
+/* CSS RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* VARIABLES */
+:root {
+  /* COLOR */
+  --BG-COLOR: rgb(48, 48, 48);
+}
+
+body {
+  /* background-color: var(--BG-COLOR); */
+  font: bolder 1rem 'Arial';
+  /* color: whitesmoke; */
+  transition: 1s;
+}
+
+.header-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* DARK MODE SECTION */
+.dark-mode-div {
+  margin: 2rem;
+  transition: transform .5s;
+}
+
+.dark-mode-button {
+  /* content: ''; */
+  padding: 1rem;
+  border: none;
+  font-size: 2rem;
+  border-radius: 5px;
+}
+
+/* TOGGLE ON AND OFF CLASSES */
+.toggleOn {
+  background-color: black;
+  color: whitesmoke;
+}
+
+.toggleOff {
+  background-color: white;
+  color: black;
+}
+/* toggle end */
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+h1 {
+  margin: 2rem 0;
+}
+
+.buttons-div {
+  margin: 2rem 0;
+  text-align: center;
+  
+}
+
+button {
+  background-color: lightgray;
+}
+
+.rps-button {
+  height: 8rem;
+  width: 8rem;
+  border-radius: 50%;
+  margin: 0 .5rem;
+  border: none;
+  font: 3.5rem 'Arial';
+  transition: transform .5s;
+}
+
+.clear-score-button, .dark-mode-button {
+  transition: transform .5s;
+}
+
+.rps-button:hover, .rps-button:focus, 
+.clear-score-button:hover, .clear-score-button:focus,
+.dark-mode-button:hover, .dark-mode-button:focus {
+  
+  transform: scale(1.2);
+}
+
+.final-result-div {
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.result {
+  font-size: 2.5rem;
+}
+
+.compare-results {
+  font-size: 2rem;
+}
+
+.final-result-div p {
+  margin: 1rem 0;
+}
+
+.clear-score-button {
+  padding: 1rem;
+  font: 1.5rem 'Arial';
+  border: none;
+  border-radius: 5px;
+}
